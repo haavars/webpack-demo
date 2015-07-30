@@ -1,6 +1,8 @@
-'use strict';
-require("./style.sass");
+import React from 'react';
+import Hello from './modules/component.jsx';
 
-import component from './modules/content.js';
+main();
 
-document.body.appendChild(component());
+function main() {
+    React.render(<Hello />, document.getElementById('app'));
+}

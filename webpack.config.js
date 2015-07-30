@@ -10,7 +10,7 @@ module.exports = {
         loaders: [
           /*Weird error in css loader due to sourcemap in sass, workaround is to add ?sourceMap*/
           { test: /\.sass$/, loader: "style!css!sass?sourceMap" },
-          { test   : /.js$/, loader : 'babel-loader' }
+          { test   : /.jsx?$/, loader : 'babel-loader' }
         ]
     }
 };
