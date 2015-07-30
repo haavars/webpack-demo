@@ -1,2 +1,6 @@
-require("./style.sass")
-document.write(require("./content.js"));
+'use strict';
+require("./style.sass");
+
+import component from './modules/content.js';
+
+document.body.appendChild(component());
